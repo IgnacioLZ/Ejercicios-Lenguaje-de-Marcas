@@ -14,7 +14,7 @@ body{
     background-size: 100%;}
 #wrapper { 
     background-color: rgb(255, 255, 255);  
-    width: 80vw;  
+    width: 90vw;  
     margin: auto; 
     padding: 3%;}
 blockquote {
@@ -59,5 +59,16 @@ dl {
 dt { 
     padding-bottom: 1%;
     padding-top: 1%;}
+#pan {
+    width: 50%;
+    padding-top: 5%;
+    padding-right: 10%;
+    float: right;
+}
+
+@MEDIA only screen and (width<800px) {
+    h1 {width: 80%}
+    #wrapper {width: 100%}
+}
 
 

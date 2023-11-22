@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALLOWEEN</title>
+    <link rel="stylesheet" href="./css/Halloween.css">
+    <link rel="shortcut icon" href="./img/Top-5-Halloween-Favicon-removebg-preview.png" type="image/x-icon">
+    <script src="./javascript/Halloween.js"></script>
+</head>
+<body>
+    <div id="scenario">
+
+        <div id="pumpkin" onmouseover="show('Bats');sound('batsound')" 
+        onmouseout="hide('Bats');silence('batsound')">     
+        </div>
+        <div id="pumpkin2" onmouseover="show('Bats2');sound('batsound')" 
+        onmouseout="hide('Bats2');silence('batsound')">
+        </div>
+
+        <div id="pumpkintext">
+            <h1>DONT KNOCK ON THE DOOR!!!</h1>
+        </div>
+        
+        <img id="Bats2" src="./img/bats2.gif" alt="Bats2">
+
+        <img id="Bats" src="./img/bats2.gif" alt="Bats">
+
+        <audio id="batsound">
+            <source src="./sounds/Boo - Sound Effect.mp3" type="audio/mp3">
+        </audio>
+
+        <div id="house" ondblclick="show('jumpscare');sound('jumpscaresound')" 
+        onmouseout="hide('jumpscare'); silence('umpscaresound')">
+        </div>
+
+        <div id="jumptext">
+            <h1>DONT BOTHER THE PUMPKINS!!!</h1>
+        </div>
+        
+        <img id="jumpscare" src="./img/jum.webp">
+
+        <audio id="jumpscaresound">
+            <source src="./sounds/ghost car blue screen.mp3" type="audio/mp3">
+        </audio>
+        
+        <div id="tree" onmouseover="show('ghost');sound('ghostsound')"
+        onmouseout="hide('ghost');silence('ghostsound')">
+        </div>
+
+        <img id="ghost" src="./img/ghost.gif">
+
+        <audio id="ghostsound">
+            <source src="./sounds/Boo - Sound Effect.mp3" type="audio/mp3">
+        </audio>
+
+        <div id="ghosttext">
+            <h1>CARE WITH THE TREE!!!</h1>
+        </div>
+        
+    </div>
+        
+</body>
+</html>

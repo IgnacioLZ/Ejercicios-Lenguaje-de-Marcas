@@ -1,0 +1,136 @@
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+@font-face {
+    font-family: scary;
+    src: url(../fonts/BloodieCurse-Regular.ttf);
+}
+
+body{background-color: black;
+font-family: scary;}
+
+#scenario {background-image: url(../img/FondoHalloween1.png);
+            width: 1400px;
+            height: 785px;
+            margin: auto;
+            
+}
+
+#pumpkin {
+    width: 260px;
+    height: 200px;
+    position: absolute;
+    top: 475px;
+    left: 270px;
+}
+#pumpkin2 {
+    width: 260px;
+    height: 200px;
+    position: absolute;
+    top: 500px;
+    left: 960px;
+}
+#pumpkintext{
+    color: red;
+    font-size: 17px;
+    padding-top: 280px;
+    padding-left: 550px;
+    text-decoration: wavy;
+}
+#Bats {
+    width: 200px;
+    position: absolute;
+    top: 500px;
+    left: 310px;
+    visibility: hidden;
+    
+}
+#Bats2 {
+    width: 200px;
+    position: absolute;
+    visibility: hidden;
+    top: 550px;
+    left: 990px;
+}
+#house {
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    top: 400px;
+    left: 830px;
+}
+#jumpscare {
+    width: 1400px;
+    height: 785px;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    visibility: hidden;
+    
+}
+#jumptext{
+    color: red;
+    font-size: 17px;
+    padding-top: 320px;
+    padding-left: 560px;
+    text-decoration: wavy;
+}
+#tree {
+    width: 230px;
+    height: 400px;
+    position: absolute;
+    top: 120px;
+    left: 1250px;
+}
+#ghost {
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 1210px;
+    visibility: hidden;
+}
+#ghosttext{
+    color: red;
+    position: absolute;
+    font-size: 17px;
+    top: 200px;
+    left: 1100px;
+}
+/*****************todo lo realtivo a la animación********************/
+@keyframes siniestro {
+    0% {color: white;
+    font-size: 17px;
+    opacity: 0;
+    }
+
+    50% {color: rgb(241, 123, 123); 
+        font-size: 25px;
+        opacity: 0.5;
+    }
+
+    100% {color: red;
+        font-size: 17px;
+        opacity: 1;
+    }
+    
+}
+
+#jumptext {
+    opacity: 1; /* Entre 0 (opaco total) y 1 (transparente)*/
+    animation-name: siniestro;
+    animation-duration: 2s;
+}
+#pumpkintext{
+    opacity: 1; /* Entre 0 (opaco total) y 1 (transparente)*/
+    animation-name: siniestro;
+    animation-duration: 2s;
+}
+#ghosttext{
+    opacity: 1; /* Entre 0 (opaco total) y 1 (transparente)*/
+    animation-name: siniestro;
+    animation-duration: 2s;
+}
